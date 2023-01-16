@@ -1,0 +1,16 @@
+@import '../common/common-rules.scss';
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+
+  .title {
+    h2 {
+      font-size: 2.4rem;
+      color: $color-black;
+      text-decoration: underline;
+    }
+  }
+}
