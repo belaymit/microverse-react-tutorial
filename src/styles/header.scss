@@ -1,0 +1,47 @@
+@import '../common/common-rules.scss';
+
+nav {
+  width: 100vw;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  background: $background-clr;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: var(--transition);
+
+  .nav-container {
+    width: 100%;
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo {
+      font-size: 2rem;
+
+      svg {
+        color: $primary-clr;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+    .nav-menu {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+
+      a {
+        color: $light-clr;
+
+        &:hover {
+          color: $dark-orange;
+        }
+      }
+    }
+  }
+  }
