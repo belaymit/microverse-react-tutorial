@@ -1,0 +1,73 @@
+@import '../common/common-rules.scss';
+
+.todo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .todo-container {
+    margin: 2rem 0;
+    width: 40%;
+    background: $background-clr;
+
+    .wrapper {
+      background: $primary-font;
+      margin: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      transition: $transition;
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+
+        .check-box {
+          input[type="checkbox"] {
+            zoom: 1.5;
+          }
+        }
+
+        .todo-details {
+          h5 {
+            font-weight: 400;
+            font-size: 1rem;
+            font-family: $ff-nunito;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .action-btns {
+        display: flex;
+        gap: 0.5rem;
+
+        .trash-icon {
+          color: $dark-red;
+          font-size: 1.25rem;
+          cursor: pointer;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+        .edit-icon {
+          font-size: 1.25rem;
+          color: rgb(167, 202, 167);
+          cursor: pointer;
+
+          &:hover {
+            color: rgb(9, 163, 214);
+          }
+        }
+      }
+    }
+  }
+}

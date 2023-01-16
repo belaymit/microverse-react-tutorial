@@ -1,0 +1,11 @@
+@import '../common/common-rules.scss';
+
+.footer {
+  background: $background-clr;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-clr;
+  flex-direction: column;
+}
